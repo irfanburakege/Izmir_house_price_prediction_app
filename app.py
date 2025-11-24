@@ -112,3 +112,4 @@ if st.button("Predict Price", type="primary"):
     # Interpretation text
     top_feature = importance_df.iloc[0]['Feature']
     st.info(f"💡 The AI relied most heavily on **{top_feature}** for this specific prediction.")
+    st.warning("⚠️ **Please note:** This estimation is based on about 1,000 listings and general location areas. It does not account for specific details like views, floor levels, or building amenities. Please view this as a helpful market guide rather than a formal appraisal.")
