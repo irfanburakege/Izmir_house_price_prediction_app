@@ -2,7 +2,7 @@
 
 I built this project to learn how to create a complete machine learning application from scratch. As a Computer Engineering student, I wanted to go beyond standard datasets. My goal was to build the entire system myself, starting from collecting the raw data all the way to publishing a live website.
 
-**Live Demo:** [Click Here to Open App](https://irfanburakege-izmir-house-price-pred.streamlit.app)
+🔗**Live Demo:** [Click Here to Open App](https://irfanburakege-izmir-house-price-pred.streamlit.app)
 
 ## Tools I Used
 * Python
