@@ -24,6 +24,7 @@ selected_district = st.sidebar.selectbox("Select District", district_list)
 # b. Size and Rooms selection
 size = st.sidebar.number_input("Size (m²)", min_value=20, max_value=500, value=125)
 rooms = st.sidebar.selectbox("Number of Rooms (Living room included!)", [1, 2, 3, 4, 5, 6, 7, 8, 9])
+age = st.sidebar.number_input("Building Age", min_value=0, max_value=50, value=5)
 
 # Calculating tier for the selected district
 # We now get the tier directly from our K-Means dictionary
@@ -34,7 +35,8 @@ selected_tier = district_tiers[selected_district]
 input_data = pd.DataFrame({
     'Rooms': [rooms],
     'Size_m2': [size],
-    'Tier': [selected_tier]
+    'Tier': [selected_tier],
+    'Age': [age]
 })
 
 # Main UI
@@ -44,11 +46,12 @@ st.markdown("Use the sidebar to enter house details and get an instant valuation
 st.write("") # Divider line
 
 # Showing what user selected
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 col1.metric("District", selected_district)
 col1.caption(f"Market Tier: {selected_tier}") 
 col2.metric("Size", f"{size} m²")
 col3.metric("Rooms", f"{rooms} Rooms")
+col4.metric("Age", f"{age} Years")
 
 st.write("")
 
