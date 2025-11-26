@@ -1,5 +1,5 @@
 import streamlit as st # type: ignore
-import pandas as pd
+import pandas as pd # type: ignore
 import pickle
 import time
 st.set_page_config(page_title="İzmir House Price Predictor", page_icon="🏠")
