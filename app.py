@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st # type: ignore
 import pandas as pd
 import pickle
 import time
@@ -59,15 +59,13 @@ if st.button("Predict Price", type="primary"):
     # Showing a message to show it's working
     with st.spinner('Analyzing the market trends...'):
         time.sleep(1) 
-        
     # main prediction
     prediction = model.predict(input_data)[0]
     
     # Displaying the results
     st.subheader(f"Estimated Price: {prediction:,.0f} TL")
-    
-    # Since we are using Gradient Boosting, we can directly access feature_importances_
     st.write("")
+    # Since we are using Gradient Boosting, we can directly access feature_importances_
     st.subheader("Why this price?")
     
     feature_names = input_data.columns
