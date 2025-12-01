@@ -65,3 +65,6 @@ Just a straight estimate based on the features.
 * Pickle for model artifacts.
 
 Thanks for reading. If you want to chat about the project or the approach, I’m happy to walk through the notebook and design decisions.
+
+!! Yasal Uyarı: Bu proje tamamen eğitim ve akademik amaçlarla geliştirilmiştir. Kullanılan veriler, halka açık kaynaklardan makine öğrenmesi algoritmalarını test etmek amacıyla örneklenmiştir. Ticari bir amacı yoktur ve veriler gerçek zamanlı piyasa koşullarını yansıtmayabilir.
+!! Disclaimer: This project is intended for educational and academic purposes only. The data was sampled from publicly available sources to demonstrate machine learning techniques. It is not intended for commercial use.
